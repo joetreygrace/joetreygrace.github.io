@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Source+Sans+Pro&display=swap");
+ 
+
+:root {
+  --red: #a33b20;
+  --tan: #DEA57E;
+  --white: #fefefe;
+  font: 35px "Source Sans Pro", sans-serif;
+  color: var(--white);
+}
+
+body {
+  background-image: url("/pics/highway-background.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.top--of--page {
+  background-color: var(--red);
+  border-radius: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  opacity: .95;
+}
+
+.about--me{
+    background-color: var(--red);
+    border-radius: 20px;
+    padding: 1rem;
+    color: var(--tan);
+    opacity: .95;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  color: var(--white);
+}
+
+.bio{
+    font-size: 1.2rem;
+}
+
+.skills h4{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.skills p{
+    font-size: 1.4rem;
+}
+
+.projects{
+    background-color: var(--red);
+    border-radius: 20px;
+    padding: 1rem;
+    color: var(--tan);
+    opacity: .95;
+    font-size: 1.2rem;
+}
+
+figure figcaption {
+    background-color: var(--tan);
+    color:var(--red);
+    border-radius: 20px;
+}
+
+.projects h4{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.7rem;
+    color: var(--white);
+}
+
+footer{
+    background-color: var(--red);
+    border-radius: 20px;
+    padding: 1rem;
+    color: var(--tan);
+    opacity: .95;
+    font-size: rem;
+}
+
+a{
+    color: var(--tan);
+}
+a:hover{
+    color: var(--white);
+}
