@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Source+Sans+Pro&display=swap");
- 
+
 
 :root {
   --red: #a33b20;
@@ -16,6 +16,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  
 }
 
 .top--of--page {
