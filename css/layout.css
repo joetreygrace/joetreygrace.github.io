@@ -175,5 +175,8 @@ footer {
     .myself{
         max-width: 60%;
        }
+    .about--me article{
+        margin-left: 0rem;
+    }
     
 }
