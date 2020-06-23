@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Source+Sans+Pro&display=swap");
 
-
 :root {
   --red: #a33b20;
   --tan: #DEA57E;
@@ -90,4 +89,17 @@ a{
 }
 a:hover{
     color: var(--white);
+}
+
+@media screen and (max-width: 1100px) {
+    .top--of--page {
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    footer {
+        font-size: .75rem;
+    }
 }
