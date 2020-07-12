@@ -1,31 +1,50 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trey Grace's Professional Portfolio</title>
-    <link rel="stylesheet" href="./css/layout.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <!-- <link rel="stylesheet" href="./css/layout.css" /> -->
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+    <link rel="stylesheet" href="./css/styletest.css" />
+    <link rel="stylesheet" href="./css/layouttest.css" />
     <link rel="icon" href="./pics/jedi-solid.svg" />
   </head>
   <body>
-    <div class="container">
-      <header class="top--of--page" id="top--of--page">
-        <h1>Trey Grace</h1>
-        <nav>
-          <a href="#about--me">About Me</a>
+    <img
+      class="start-background"
+      src="./pics/highway-background.jpg"
+      alt="highway background"
+    />
+    <div class="intro">
+      <h1>Trey Grace</h1>
+      <hr />
+      <p>Full Stack Developer</p>
+    </div>
+    <div class="overlay"></div>
+    <nav>
+      <ul>
+        <li>
+          <a href="#myself">About Me</a>
+        </li>
+        <li>
+          <a href="#skills">Skills</a>
+        </li>
+        <li>
           <a href="#projects">Projects</a>
-        </nav>
-      </header>
-      <section id="about--me" class="about--me">
-        <h3>About Me</h3>
-        <section class="bio">
-          <figure class="myself">
-            <img src="./pics/myself.jpg" alt="A picture of myself" />
-          </figure>
-          <article>
+        </li>
+        <li>
+          <a href="#connect">Connect</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="about--me">
+      <div id="myself" class="about--me__info">
+        <h2>About Me</h2>
+        <hr />
+        <div class="about--me__grid">
+          <img src="./pics/myself.jpg" alt="A picture of myself" />
+          <p>
             My full name is Joe Grace III. I have always gone by the nickname
             Trey, which means three. I am originally from Houston, TX. After
             high school I joined the Ohio Army National Guard. In 2012, I
@@ -41,11 +60,11 @@
             with my wife and our two dogs, Sam and Zoey. Some of my interests
             include hunting, video games, DIY home improvement projects, and
             smoking various meats.
-          </article>
-        </section>
-        <section class="pictures">
+          </p>
+        </div>
+        <div class="photo-grid">
           <figure>
-            <img src="./pics/baseball.jpg" alt="Wife and I" />
+            <img src="./pics/baseball-cropped.jpg" alt="Wife and I" />
             <figcaption>Wife and I at baseball game</figcaption>
           </figure>
           <figure>
@@ -56,162 +75,143 @@
             <img src="./pics/afghan.jpg" alt="Afganistan" />
             <figcaption>Afghanistan 2012</figcaption>
           </figure>
-        </section>
-        <section class="skills">
-          <h4>Skills:</h4>
-          <p>
-            -- Java -- Spring -- Hibernate -- JPA -- JavaScript -- MVC -- HTML
-            -- CSS -- Flexbox -- Grid -- TDD -- Agile (Scrum) -- Object Oriented
-            Programming (OOP) -- AJAX -- JSON -- Restful APIs -- Responsive
-            Design / Mobile -- Structured Query Language (SQL) -- Relational
-            Databases -- Source Control / Git --
-          </p>
-        </section>
-        <section class="contact">
-          <figure class="email--link">
-            <a href="mailto:joeggrace@gmail.com">
-              <img src="./pics/gmail.png" alt="Gmail Logo" />
-            </a>
-          </figure>
-          <figure class="linkedin--link">
-            <a href="https://www.linkedin.com/in/trey-grace/">
-              <img src="./pics/linkedin.png" alt="LinkedIn Logo" />
-            </a>
-          </figure>
-          <figure class="github--link">
-            <a href="https://github.com/joetreygrace">
-              <img src="./pics/github.png" alt="GitHub Logo" />
-            </a>
-          </figure>
-        </section>
-        <a href="#top--of--page">Return to top of Page</a>
-      </section>
-      <section class="projects" id="projects">
-        <h3>My Projects</h3>
-        <section class="virtual--pet">
-          <h4>VirtualPet Project:</h4>
-          <article>
-            The goal for this project was to make a Virtual Pet(ie. tamagotchi).
-            My animal was a tiger cub inspired by the Tiger King TV show. This
-            was my first Java project. I used various int variables to keep
-            track of health, thirst, hunger, boredom, and tiredness. For the
-            console output, I used a while loop with minimum levels the user has
-            keep the animals stats above to keep the animal "alive". A "tick"
-            was created that runs after every turn to make the pet's needs
-            increase. I used a random number generator for a random chance the
-            animal gets sick.
-          </article>
-          <section class="screenshots virtual--pet">
-            <figure>
+        </div>
+      </div>
+    </div>
+    <div class="skills">
+      <div class="skills--content" id="skills">
+        <h2>Skills</h2>
+        <hr />
+        <div class="skills-grid">
+          <ul>
+            <li>Java</li>
+            <li>JavaScript</li>
+            <li>JPA</li>
+            <li>TDD</li>
+            <li>Object Oriented Programming (OOP)</li>
+            <li>JSON</li>
+            <li>AJAX</li>
+            <li>Restful APIs</li>
+            <li>Structured Query Language (SQL)</li>
+            <li>Relational Databases</li>
+          </ul>
+          <ul>
+            <li>Spring</li>
+            <li>MVC</li>
+            <li>Hibernate</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Flexbox</li>
+            <li>Grid</li>
+            <li>Responsive Design / Mobile</li>
+            <li>Agile (Scrum)</li>
+            <li>Source Control / Git</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="projects">
+      <div class="projects--content" id="projects">
+        <h2>Projects</h2>
+        <hr />
+        <div class="projects--grid">
+          <div class="donut-clicker">
+            <h3>Donut Maker</h3>
+            <div class="donut--img--container">
               <img
-                src="./pics/VirtualPetOutput.jpg"
-                alt="VirtualPet Console Output"
+                class="donut--img"
+                src="./pics/donut-maker.png"
+                alt="Donut Maker screenshot"
               />
-              <figcaption>VirtualPet Console Output</figcaption>
-            </figure>
-            <figure>
-              <img src="./pics/virtualpetone.png" alt="VirtualPet Code" />
-              <figcaption>
-                VirtualPet's stats variables and "Tick" method
-              </figcaption>
-            </figure>
-            <figure>
-              <img src="./pics/virtualpettwo.png" alt="VirtualPet Code" />
-              <figcaption>
-                Methods to take care of health, tiredness, and boredom
-              </figcaption>
-            </figure>
-          </section>
-          <a
-            href="https://github.com/2020-Summer-Cohort/virtual-pet-java-joetreygrace"
-            >GitHub Repository</a
-          >
-        </section>
-        <section class="virtual--pet--shelter">
-          <h4>VirtualPetShelter Project:</h4>
-          <article>
-            This project built on the VirtualPet project by having multiple
-            pets. This was my first project done using TDD. The pet class was
-            almost the same with a Shelter class which housed all the pet
-            objects using a Map. The Shelter class also called methods for every
-            pet and even made a method for calling a single individual pet given
-            it's name.
-          </article>
-          <section class="screenshots">
-            <figure>
+              <a
+                href="https://github.com/2020-Summer-Cohort/module-4-donut-maker-joetreygrace"
+                target="_blank"
+                ><div class="donut--info">
+                  <h4>Scope:</h4>
+                  <p>
+                    A browser based game made with JavaScript. Based on the
+                    Cookie Clicker game.
+                  </p>
+                  <hr />
+                  <h4>Skills Used:</h4>
+                  <p>VS Code, JavaScript, HTML, CSS, Grid, FlexBox</p>
+                </div></a
+              >
+            </div>
+          </div>
+          <div class="blog--site">
+            <h3>L Double T Blog Site</h3>
+            <div class="blog--img--container">
               <img
-                src="./pics/VirtualPetShelterOutput.jpg"
-                alt="VirtualPetShelter Console Output"
+                class="blog--img"
+                src="./pics/blog-site.png"
+                alt="Blog Site screenshot"
               />
-              <figcaption>VirtualPetShelter Console Output</figcaption>
-            </figure>
-            <figure>
+              <a
+                href="https://github.com/2020-Summer-Cohort/blog-java-l-double-t"
+                target="_blank"
+              >
+                <div class="blog--info">
+                  <h4>Scope:</h4>
+                  <p>
+                    A browser MVC blog rendered with dynamic HTML ThymeLeaf
+                    templates.
+                  </p>
+                  <hr />
+                  <h4>Skills Used:</h4>
+                  <p>
+                    VS Code, IntelliJ, Java, Spring, ThymeLeaf, MVC, TDD, OOP,
+                    HTML, CSS, Grid, FlexBox
+                  </p>
+                </div></a
+              >
+            </div>
+          </div>
+          <div class="pets--amok">
+            <h3>Virtual Pets Amok</h3>
+            <div class="pet--img--container">
               <img
-                src="./pics/petshelterone.png"
-                alt="VirtualPetShelter Code"
-              />
-              <figcaption>VirtualPet Class Tests</figcaption>
-            </figure>
-            <figure>
-              <img
-                src="./pics/petsheltertwo.png"
-                alt="VirtualPetShelter Code"
-              />
-              <figcaption>VirtualPetShelter Class Code</figcaption>
-            </figure>
-          </section>
-          <a
-            href="https://github.com/2020-Summer-Cohort/virtual-pet-shelter-java-joetreygrace"
-            >GitHub Repository</a
-          >
-        </section>
-        <section id="virtual--pet-amok">
-          <h4>VirtualPetAmok Project:</h4>
-          <article>
-            This project built on the Shelter project by having multi different
-            kinds of animals all in one shelter. This project was completed
-            using TDD. This project utilizes encapsulation, inheritance,
-            polymorphism, and TDD. I also used instanceof cases to select
-            between the different kind of animals in the shelter.
-          </article>
-          <section class="screenshots">
-            <figure>
-              <img
+                class="pet--img"
                 src="./pics/VirtualPetShelterAmokOutput.jpg"
                 alt="VirtualPetAmok Console Output"
               />
-              <figcaption>VirtualPetAmok Console Output</figcaption>
-            </figure>
-            <figure>
-              <img src="./pics/petamokone.png" alt="PetAmok Code" />
-              <figcaption>Organic Animal Interface</figcaption>
-            </figure>
-            <figure>
-              <img src="./pics/petamoktwo.png" alt="PetAmok Code" />
-              <figcaption>VirtualPet Abstract Class</figcaption>
-            </figure>
-            <figure>
-              <img src="./pics/petamokthree.png" alt="PetAmok Code" />
-              <figcaption>Organic Dog Class</figcaption>
-            </figure>
-          </section>
-          <a
-            href="https://github.com/2020-Summer-Cohort/virtual-pets-amok-java-joetreygrace"
-            >GitHub Repository</a
-          >
-        </section>
-      </section>
-      <footer>
-        <a href="#top--of--page">Return to top of Page</a>
-        <p>© Trey Grace | 2020</p>
-        <div>
-          Icons made by
-          <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from
-          <a href="https://www.flaticon.com/" title="Flaticon"
-            >www.flaticon.com</a
-          >
+              <a
+                href="https://github.com/2020-Summer-Cohort/virtual-pets-amok-java-joetreygrace"
+                ><div class="pet--info">
+                  <h4>Scope:</h4>
+                  <p>
+                    A console based app based on tamagotchi games.
+                  </p>
+                  <hr />
+                  <h4>Skills Used:</h4>
+                  <p>
+                    IntelliJ, Java, MVC, TDD, OOP
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
-      </footer>
+      </div>
     </div>
+    <div class="connect">
+      <div class="connect-info" id="connect">
+        <h2>Connect</h2>
+        <hr />
+        <div class="connect--grid">
+          <a href="mailto:joeggrace@gmail.com" target="_blank">
+            <img src="./pics/gmail.png" alt="Gmail Logo" />
+          </a>
+          <a href="https://www.linkedin.com/in/trey-grace/" target="_blank">
+            <img src="./pics/linkedin.png" alt="LinkedIn Logo" />
+          </a>
+          <a href="https://github.com/joetreygrace" target="_blank">
+            <img src="./pics/github.png" alt="GitHub Logo" />
+          </a>
+        </div>
+        <p>&copy Trey Grace | 2020</p>
+      </div>
+    </div>
+    <script src="./src/js/app.js"></script>
   </body>
 </html>

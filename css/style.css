@@ -1,105 +1,145 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Source+Sans+Pro&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --red: #a33b20;
-  --tan: #DEA57E;
+  --tan: #dea57e;
   --white: #fefefe;
-  font: 20px "Source Sans Pro", sans-serif;
+  font: 30px "Source Sans Pro", sans-serif;
   color: var(--white);
 }
 
-body {
-  background-image: url("/pics/highway-background.jpg");
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  
+.intro h1 {
+  font: 3.5rem "Montserrat", sans-serif;
 }
 
-.top--of--page {
+h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+hr {
+  border: 2px solid white;
+}
+
+.about--me {
   background-color: var(--red);
-  border-radius: 20px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2rem;
-  opacity: .95;
+  color: var(--tan);
 }
 
-.about--me{
-    background-color: var(--red);
-    border-radius: 20px;
-    padding: 1rem;
-    color: var(--tan);
-    opacity: .95;
+nav {
+  font-size: 0.7rem;
+  background-color: black;
+  border-radius: 3px;
 }
 
-h3{
-    font-family: 'Montserrat', sans-serif;
-  font-size: 2.5rem;
+li {
+  list-style: none;
+  text-align: center;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  border-radius: 3px;
+}
+
+nav a:hover {
+  background-color: grey;
+}
+
+.about--me__info {
+  font: 20px "Source Sans Pro", sans-serif;
+}
+
+h2 {
+  font: 2.5rem "Montserrat", sans-serif;
+}
+
+.about--me__info hr {
+  border: 2px solid var(--tan);
+}
+
+.about--me__grid {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.about--me__info img {
+  max-width: 250px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.skills {
+  background-color: var(--tan);
   color: var(--white);
 }
 
-.bio{
-    font-size: 1.2rem;
+.skills li:hover {
+  background-color: rgba(128, 128, 128, 0.788);
 }
 
-.skills h4{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
-    color: var(--white);
+.projects {
+  background-color: var(--red);
+  color: var(--tan);
 }
 
-.skills p{
-    font-size: 1.4rem;
+.projects hr {
+  border: 2px solid var(--tan);
 }
 
-.projects{
-    background-color: var(--red);
-    border-radius: 20px;
-    padding: 1rem;
-    color: var(--tan);
-    opacity: .95;
-    font-size: 1.2rem;
+.projects img {
+  max-width: 850px;
+  height: auto;
+  border-radius: 10px;
 }
 
-figure figcaption {
-    background-color: var(--tan);
-    color:var(--red);
-    border-radius: 20px;
+.connect {
+  background-color: var(--white);
+  color: var(--tan);
 }
 
-.projects h4{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.7rem;
-    color: var(--white);
+.connect hr {
+  border: 2px solid var(--tan);
 }
 
-footer{
-    background-color: var(--red);
-    border-radius: 20px;
-    padding: 1rem;
-    color: var(--tan);
-    opacity: .95;
-    font-size: rem;
+.connect img {
+  max-width: 150px;
+  height: auto;
 }
 
-a{
-    color: var(--tan);
-}
-a:hover{
-    color: var(--white);
+.connect p {
+  font-size: 0.8rem;
 }
 
-@media screen and (max-width: 1100px) {
-    .top--of--page {
-        font-size: 1rem;
-    }
+.donut--info {
+  background-color: rgba(222, 165, 126, 0.75);
+  color: var(--red);
+  border-radius: 10px;
 }
 
+.donut--info hr {
+  border: 2px solid var(--red);
+}
 
-@media screen and (max-width: 700px) {
-    footer {
-        font-size: .75rem;
-    }
+.blog--info {
+  background-color: rgba(222, 165, 126, 0.75);
+  color: var(--red);
+  border-radius: 10px;
+}
+
+.blog--info hr {
+  border: 2px solid var(--red);
+}
+
+.pet--info {
+  background-color: rgba(222, 165, 126, 0.75);
+  color: var(--red);
+  border-radius: 10px;
+}
+
+.pet--info hr {
+  border: 2px solid var(--red);
 }
