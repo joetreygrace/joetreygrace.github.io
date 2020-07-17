@@ -180,8 +180,33 @@ h2 {
   margin-bottom: 15px;
 }
 
-.connect {
+.resume {
   top: 4053px;
+  left: 0px;
+  right: 0px;
+  position: absolute;
+  z-index: 2;
+}
+
+.resume-info {
+  max-width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.resume hr {
+  max-width: 40%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.resume iframe {
+  height: 1150px;
+}
+
+.connect {
+  top: 5376px;
   left: 0px;
   right: 0px;
   position: absolute;

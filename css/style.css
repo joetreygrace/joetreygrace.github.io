@@ -46,7 +46,8 @@ nav a {
 }
 
 nav a:hover {
-  color: grey;
+  font-style: italic;
+  font-size: 0.8rem;
 }
 
 .on--page {
@@ -99,6 +100,15 @@ h2 {
   max-width: 850px;
   height: auto;
   border-radius: 10px;
+}
+
+.resume {
+  background-color: var(--tan);
+  color: var(--white);
+}
+
+.resume hr {
+  border: 2px solid var(--white);
 }
 
 .connect {

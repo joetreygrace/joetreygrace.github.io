@@ -12,6 +12,8 @@ const projects = document.querySelector(".projects");
 const navProjects = document.querySelector(".nav--projects");
 const connect = document.querySelector(".connect");
 const navConnect = document.querySelector(".nav--connect");
+const resume = document.querySelector(".resume");
+const navResume = document.querySelector(".nav--resume");
 
 observerMe = new IntersectionObserver((entries) => {
   entries.forEach(
@@ -65,6 +67,19 @@ observerConnect = new IntersectionObserver((entries) => {
   );
 });
 
+observerResume = new IntersectionObserver((entries) => {
+  entries.forEach(
+    (entry) => {
+      if (entry.isIntersecting) {
+        navResume.classList.add("on--page");
+      } else {
+        navResume.classList.remove("on--page");
+      }
+    },
+    { threshold: 1 }
+  );
+});
+
 donutImg.onmouseover = function () {
   donut.style.display = "block";
 };
@@ -105,3 +120,4 @@ observerMe.observe(aboutMe);
 observerSkills.observe(skills);
 observerProjects.observe(projects);
 observerConnect.observe(connect);
+observerResume.observe(resume);
