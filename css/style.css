@@ -12,6 +12,19 @@ html {
   color: var(--white);
 }
 
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 10px var(--tan);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--red);
+  border-radius: 10px;
+}
+
 .intro h1 {
   font: 3.5rem "Montserrat", sans-serif;
 }
@@ -97,7 +110,7 @@ h2 {
 }
 
 .projects img {
-  max-width: 850px;
+  max-width: 1500px;
   height: auto;
   border-radius: 10px;
 }
@@ -155,6 +168,224 @@ h2 {
   border-radius: 10px;
 }
 
-.pet--info hr {
+.project .scope hr {
   border: 2px solid var(--red);
+}
+
+.project .scope {
+  background-color: rgba(222, 165, 126, 0.85);
+  color: var(--red);
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  :root {
+    font: 15px "Source Sans Pro", sans-serif;
+  }
+
+  .about--me__info {
+    font: 15px "Source Sans Pro", sans-serif;
+  }
+
+  .about--me__info img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .photo-grid img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .connect img {
+    max-width: 100px;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  :root {
+    font: 15px "Source Sans Pro", sans-serif;
+  }
+
+  .about--me__info {
+    font: 15px "Source Sans Pro", sans-serif;
+  }
+
+  .connect img {
+    max-width: 100px;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  :root {
+    --red: #a33b20;
+    --tan: #dea57e;
+    --white: #fefefe;
+    font: 25px "Source Sans Pro", sans-serif;
+    color: var(--white);
+  }
+
+  ::-webkit-scrollbar {
+    width: 20px;
+  }
+
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 10px var(--tan);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--red);
+    border-radius: 10px;
+  }
+
+  .intro h1 {
+    font: 3.5rem "Montserrat", sans-serif;
+  }
+
+  h2 {
+    font-family: "Montserrat", sans-serif;
+  }
+
+  hr {
+    border: 2px solid white;
+  }
+
+  .about--me {
+    background-color: var(--red);
+    color: var(--tan);
+  }
+
+  nav {
+    font-size: 0.7rem;
+    background-color: black;
+    border-radius: 3px;
+  }
+
+  li {
+    list-style: none;
+    text-align: center;
+  }
+  nav a {
+    text-decoration: none;
+    color: white;
+    border-radius: 3px;
+  }
+
+  nav a:hover {
+    font-style: italic;
+    font-size: 0.8rem;
+  }
+
+  .on--page {
+    background-color: grey;
+    color: white;
+  }
+
+  .about--me__info {
+    font: 18px "Source Sans Pro", sans-serif;
+  }
+
+  h2 {
+    font: 2.5rem "Montserrat", sans-serif;
+  }
+
+  .about--me__info hr {
+    border: 2px solid var(--tan);
+  }
+
+  .about--me__grid {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .about--me__info img {
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .photo-grid img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .skills {
+    background-color: var(--tan);
+    color: var(--white);
+  }
+
+  .skills li:hover {
+    background-color: rgba(128, 128, 128, 0.788);
+  }
+
+  .projects {
+    background-color: var(--red);
+    color: var(--tan);
+  }
+
+  .projects hr {
+    border: 2px solid var(--tan);
+  }
+
+  .projects img {
+    max-width: 1500px;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .resume {
+    background-color: var(--tan);
+    color: var(--white);
+  }
+
+  .resume hr {
+    border: 2px solid var(--white);
+  }
+
+  .connect {
+    background-color: var(--white);
+    color: var(--tan);
+  }
+
+  .connect hr {
+    border: 2px solid var(--tan);
+  }
+
+  .connect img {
+    max-width: 150px;
+    height: auto;
+  }
+
+  .connect p {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  :root {
+    font: 30px "Source Sans Pro", sans-serif;
+  }
+
+  .photo-grid img {
+    max-width: 250px;
+  }
+
+  figcaption {
+    font-size: 0.75rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .about--me__info {
+    font: 20px "Source Sans Pro", sans-serif;
+  }
 }
