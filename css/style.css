@@ -203,6 +203,10 @@ h2 {
     max-width: 50px;
     height: auto;
   }
+
+  .scope {
+    font-size: 11px;
+  }
 }
 
 @media only screen and (min-width: 600px) {
